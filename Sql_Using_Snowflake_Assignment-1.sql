@@ -64,8 +64,8 @@ select * from Shri_sales_data_copy;
    
 ------task6- Flagging-Processing_days------------------------
 #if Processing_days <= 3 days mark 5 rating
-#if Processing_days >= 3 and <=6 days mark 4 rating
-#if Processing_days >=6 and <=10 days mark 3 rating
+#if Processing_days > 3 and <=6 days mark 4 rating
+#if Processing_days >6 and <=10 days mark 3 rating
 #if Processing_days >10  mark 2 rating
 
 Alter table Shri_sales_data_copy
